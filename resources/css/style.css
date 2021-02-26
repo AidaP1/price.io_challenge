@@ -35,7 +35,6 @@ a {
     height: 3rem;
     border-radius: 10px;
     margin: 6% 10%;
-    
     display: grid;
     align-items: center;
     justify-items: center;
@@ -88,12 +87,18 @@ main {
     grid-area: banner;
 }
 
+.search-banner h6 {
+    opacity: 0.5;
+    font-size: 0.7rem;
+}
+
 .search-box {
     display: flex;
     align-content: center;
     flex-wrap: wrap;
     justify-content: center;
     grid-area: box;
+    
 }
 
 .search-bar {
@@ -101,9 +106,10 @@ main {
 }
 
 .search-box input {
-    background-color: grey;
+    background-color: hsl(0 0% 90%);
     width: 100%;
     align-self: flex-start;
+    border-radius: 3px;
 }
 
 
@@ -121,6 +127,7 @@ main {
     grid-template: 120px 1fr 1fr 1fr / 1fr 1fr;
     border-radius: 5px;
     border: solid 1px gray;
+    margin: 5%;
 }
 
 .product-image {
@@ -193,4 +200,16 @@ main {
 
 .buy-button {
     grid-column: span 2;
+}
+
+.subscription-box {
+    background-color: blue;
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr;
+    justify-items: center;
+}
+
+.subscription-sell h2 {
+    color: white;
+    
 }
