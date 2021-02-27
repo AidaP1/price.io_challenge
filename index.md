@@ -10,14 +10,13 @@
             <div class="logo">
                 <img src="./Price.io-master/images/logo.png" alt="price.io logo" />
             </div>
-            <a><h4>Sign Up</h4></a>
+            <div class="signup-button">
+                <a><h4>Sign Up</h4></a>
+            </div>
         </nav>
         <main>
             <section class="banner">
-                <div class="hero-box">
-                    <!--
-                    <img src="./Price.io-master/images/hero-image.png" />
-                    --->
+                <div class="hero-box">                    
                 </div>
                 <section class="search-banner">
                     <h1>Get Instant Email notifications when Amazon Prices Drop.</h1>
@@ -148,35 +147,33 @@
                 </div>
             </section>
             <section class="subscription-sell">
-                <div class="subscription-box">
-                    <h2>Want to get notified when a product receives a price drop?</h2>
-                    <input type="text">
-                    <a><h4>Sign Up</h4></a>
-                    <h6>* No spam, ever. Only receive price drop notifications.</h6>
-                </div>
-                <!--
+                <h2>Want to get notified when a product receives a price drop?</h2>
+                <input type="text">
+                <a><h4>Sign Up</h4></a>
+                <h6>* No spam, ever. Only receive price drop notifications.</h6>
                 <div class="newsletter-img">
-
-                </div>-->
+                    <img src="./Price.io-master/images/Newsletter-image.png" />
+                </div>
             </section>
         </main>
         <footer>
-            <div class="logo">
-                <img src="./Price.io-master/images/logo-notext.png" alt="price.io logo" />
-            </div>
-            <div class="social-links">
-                <h5>Follow Us On</h5>
-                <div class="insta">
-                    <img src="./Price.io-master/images/social-1_logo-instagram.png" alt="insatgram logo" />
-
+            <section class="footer-content">
+                <div class="logo">
+                    <img src="./Price.io-master/images/logo-notext.png" alt="price.io logo" />
                 </div>
-                <div class="twitter">
-                    <img src="./Price.io-master/images/social-1_logo-twitter.png" alt="twitter logo" />
+                <div class="social-links">
+                    <h5>Follow Us On</h5>
+                    <div class="insta">
+                        <img src="./Price.io-master/images/social-1_logo-instagram.png" alt="insatgram logo" />
+                    </div>
+                    <div class="twitter">
+                        <img src="./Price.io-master/images/social-1_logo-twitter.png" alt="twitter logo" />
+                    </div>
+                    <div class="facebook">
+                        <img src="./Price.io-master/images/White_2_.png" alt="facebook logo" />
+                    </div>    
                 </div>
-                <div class="facebook">
-                    <img src="./Price.io-master/images/White_2_.png" alt="facebook logo" />
-                </div>    
-            </div>
+            </section>
         </footer>
     </body>
 </html>
