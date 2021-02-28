@@ -57,45 +57,41 @@ main {
     display: grid;
     justify-content: center;
     grid-template-columns: 1fr;
+    grid-template-rows: [banner-start] 400px [banner-end] 10px [filter-start] auto [filter-end] 10px[items-start] auto [items-end subscription-start]  auto [subscription-end footer-start] auto [footer-end];
 }
 
-.item-options {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+
 
 .banner {
     position: relative;
     display: grid;
-    grid-template: repeat(3,1fr) / 80% 1fr;
-    height: 300px;
-    margin-bottom: 10%;
+    grid-template: 30% 1fr 1fr 10% / 80% 1fr;
 }
 
 .hero-box {
     background-image: url("../../Price.io-master/images/hero-image.png");
     background-repeat: no-repeat;
     background-size: cover;
-    grid-area: 1 / -1 / 4 / 1;
+    grid-area: 1 / -1 / 5 / 1;
     width: 100%;
 }
 
 .search-banner {
-    grid-area: 3 / 1 / 4 / 2;
+    grid-area: 3 / 1 / 3 / 2;
     border-radius: 5px;
     background-color: white;
     display: grid;
     grid-template:  
+        " . . ." 10px
         ". banner ."1fr
-        ". box ."
+        ". box ." 1fr
         / 10px 1fr 10px;
+    align-items: start;
 
 }
 
-.search-banner h1 {
+.banner-text {
     color: blue;
-    margin: 5%;
     font-size: 2rem;
     grid-area: banner;
 }
@@ -116,6 +112,7 @@ main {
 
 .search-bar {
     min-width: 250px;
+    width: 100%;
 }
 
 input {
@@ -133,8 +130,10 @@ input {
 
 
 .item-options {
+    grid-row: items;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
@@ -228,6 +227,7 @@ input {
 }
 
 .subscription-sell {
+    grid-row: subscription;
     background-color: blue;
     display: grid;
     height: 150px;
@@ -251,7 +251,7 @@ input {
 }
 
 .subscription-sell a {
-    grid-area: 3 / 4 / span 4 / span 1;
+    grid-area: 3 / 4 / span 1 / span 1;
     height: 70%;
     width: 80%;
 }
@@ -303,16 +303,26 @@ footer {
 
 @media only screen and (min-width: 800px) {
     main {
-        grid-template-columns: 5% 1fr 5%;
+        grid-template-columns: 5% repeat(10,1fr) 5%;
     }
     section {
-        grid-column-start: 2;
+        grid-column: 2 / -1;
     }
+    .banner {
+        grid-template-columns: repeat(11,1fr);
+    }
+    .hero-box {
+        grid-column-end: -7;
+    }
+
     .subscription-sell {
         grid-template: 10% 30% 1fr 1fr / 25px 1fr 1fr 1fr 50%;
     }
     .newsletter-img {
         display: flex;
+    }
+    footer {
+        grid-template-columns: 5% repeat(10,1fr) 5%;
     }
 
 }
